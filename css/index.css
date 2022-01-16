@@ -1,90 +1,92 @@
 *{
-    margin: 0;
     padding: 0;
+    margin: 0;
     box-sizing: border-box;
+    font-family: url(https://fonts.google.com/specimen/Outfit);
 }
 
 body{
-    background-color:rgba(1, 29, 55, 1);
+    background-color: hsl(217, 54%, 11%);
     height: 100vh;
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
     align-items: center;
-}
-
-.target{
-    background-color: rgba(1, 30, 80, 0.37);
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    padding: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
-}
-
-.title{
-    color: beige;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.desc{
-    color: rgb(160, 152, 152);
-    margin-bottom: 20px;
-}
-
-.imagen{
-    display: flex;
     justify-content: center;
 }
-#portada{
-    width: 100%;
-    max-width: 230px;
+
+.tarjeta_presentacion{
+    background-color: hsl(216, 50%, 16%);
+    flex-direction: column;
+    border-radius: 20px;
+    width: 280px;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.imagen-equilibrium{
+    width: 250px;
     height: auto;
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.titulo-tarjeta{
+    color: hsl(0, 0%, 100%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.titulo-tarjeta:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.descripcion-tarjeta{
+    color: hsl(215, 51%, 70%);
+    padding-bottom: 20px;
 }
 
 .iconos{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 20px;
-}
-
-.derecha{
-    width: 100px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: rgb(160, 152, 152);
+    padding-bottom: 15px;
 }
 
 .izquierda{
-    width: 95px;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    color: aqua;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    color: hsl(178, 100%, 50%);
 }
 
-
-
-.creador img{
-    width: 25px;
-    border-radius: 50%;
-}
-
-.creador p{
-    color: rgb(160, 152, 152);
+.derecha{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    color: hsl(215, 51%, 70%);
 }
 
 .creador{
-    border-top: 1px solid grey;
     display: flex;
-    justify-content: space-around;
-    flex-direction: row;
     align-items: center;
-    padding-top: 10px;
+    padding-top: 15px;
+    border-top: solid 2px hsl(215, 32%, 27%);
+}
+
+.creador p{
+    margin-left: 20px;
+}
+
+.autor{
+    color: hsl(0, 0%, 100%);
+}
+
+.autor:hover{
+    color: hsl(178, 100%, 50%);
+}
+
+.imagen-avatar{
+    width: 30px;  
+    border: solid 1px hsl(0, 0%, 100%);
+    border-radius: 50%;  
 }
